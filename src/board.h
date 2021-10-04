@@ -2,7 +2,8 @@
 #ifndef BOARD_H
 #define BOARD_H 1
 
-int board[4][4];
+#include "global.h"
+
 void clear_board();
 void shift_board(char direction);
 int count_empty_fields();
