@@ -17,3 +17,7 @@ global.o: src/global.cpp
 clean:
 	rm -f *.o
 	rm -f boardtest
+
+todo:
+	grep -r -C 2 -Hn TODO *
+
