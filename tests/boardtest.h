@@ -11,6 +11,7 @@ using namespace std;
 class boardtest : public CPPUNIT_NS :: TestFixture {
         CPPUNIT_TEST_SUITE (boardtest);
         CPPUNIT_TEST (clear_board_test);
+        CPPUNIT_TEST (count_empty_fields_test);
         CPPUNIT_TEST_SUITE_END();
 
         public:
@@ -19,7 +20,7 @@ class boardtest : public CPPUNIT_NS :: TestFixture {
 
         protected:
                 void clear_board_test (void);
-
+                void count_empty_fields_test (void);
 };
 
 #endif   // # BOARDTEST_H

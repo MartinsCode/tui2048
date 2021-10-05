@@ -3,7 +3,7 @@
 #include <cppunit/extensions/TestFactoryRegistry.h>
 #include <cppunit/TestResult.h>
 #include <cppunit/TestResultCollector.h>
-#include <cppunit/TestRunner.h>
+#include <cppunit/ui/text/TestRunner.h>
 #include <cppunit/BriefTestProgressListener.h>
 
 int main (int argc, char* argv[]) {
@@ -14,7 +14,8 @@ int main (int argc, char* argv[]) {
         CPPUNIT_NS :: BriefTestProgressListener progress;
         testresult.addListener (&progress);
 
-        CPPUNIT_NS :: TestRunner testrunner;
+//        CPPUNIT_NS :: TestRunner testrunner;
+        CppUnit::TextUi::TestRunner testrunner;
         testrunner.addTest (CPPUNIT_NS :: TestFactoryRegistry :: getRegistry ().makeTest ());
         testrunner.run (testresult);
 

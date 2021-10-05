@@ -29,6 +29,9 @@ void boardtest :: clear_board_test (void) {
         CPPUNIT_ASSERT_EQUAL (cleared, true);
 }
 
+void boardtest :: count_empty_fields_test (void) {
+        CPPUNIT_ASSERT_EQUAL (1, 2);
+}
 
 /*
 class boardtest : public CPPUNIT_NS :: TestFixture {
